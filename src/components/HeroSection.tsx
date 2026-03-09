@@ -23,10 +23,14 @@ const HeroSection = () => {
       <div className="absolute -bottom-8 left-20 w-72 h-72 bg-accent-blue-light/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
 
       {/* Grid pattern overlay */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: 'radial-gradient(circle, hsl(var(--foreground)) 1px, transparent 1px)',
-        backgroundSize: '30px 30px'
-      }} />
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, hsl(var(--foreground)) 1px, transparent 1px)",
+          backgroundSize: "30px 30px",
+        }}
+      />
 
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         {/* Profile Photo */}
@@ -43,14 +47,16 @@ const HeroSection = () => {
             <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-accent-blue/30 glow-accent transition-all duration-300 group-hover:border-accent-blue/60">
               {profileImage ? (
                 <img
-                  src={profileImage}
+                  src="https://drive.google.com/file/d/1Rup2jTlcnOuFCXZaWtUhXxzVeG9hrYQH/view?usp=sharing"
                   alt="Gracy Vasania"
                   className="w-full h-full object-cover"
                 />
               ) : (
                 <div className="w-full h-full bg-secondary flex flex-col items-center justify-center gap-2">
                   <Camera className="h-8 w-8 text-muted-foreground" />
-                  <span className="text-xs text-muted-foreground font-body">Add Photo</span>
+                  <span className="text-xs text-muted-foreground font-body">
+                    Add Photo
+                  </span>
                 </div>
               )}
             </div>
@@ -87,7 +93,9 @@ const HeroSection = () => {
             Gracy Vasania
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-body italic">
-            "Passionate educator with experience across IB, Cambridge, and CBSE curricula, dedicated to inquiry-based learning, critical thinking, and transformative education."
+            "Passionate educator with experience across IB, Cambridge, and CBSE
+            curricula, dedicated to inquiry-based learning, critical thinking,
+            and transformative education."
           </p>
         </motion.div>
 
